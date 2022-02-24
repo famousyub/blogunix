@@ -1,0 +1,68 @@
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# Content background and border color
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+$htmlBackground: url("../img/noise-bright.png") #DDD;
+$backgroundColor: #FFF;
+$backgroundColorEmphasize: #EEE;
+$borderColor: #AAA;
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# Header and navigation
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+$headerBarTextColor: #333;
+$navigationLinkBackgroundColor: #DDD;
+$navigationLinkFocusedBackgroundColor: #CCC;
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# Text colors
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+$textColor: #333;
+$textColorLight: #444;
+$textColorStrong: #000;
+$formElementTextColor: #404040;
+$codeTextColor: #008B45;
+$linkColor: #0060A0;
+$linkColorFocused: #CCC;
+$warningTextColor: #B03060;
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# Misc
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+$itemLinkHoverBackgroundColor: #DDD;
+$paginationActiveBackgroundColor: #CCC;
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# Forms
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+$formBackgroundColorEmphasize: #DDD;
+$formButtonBorderColor: #404040;
+$formButtonTextColor: #EEE;
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# Form buttons
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+$insertButtonBackgroundColor: #4D8D5D;
+$updateButtonBackgroundColor: #6A8AA5;
+$deleteButtonBackgroundColor: #C45C66;
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# Information message box
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+$messageListTextColor: #EEE;
+$messageListBackgroundColor: #C45C66;
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# Scrollbars
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+$scrollbarColor: #A1A1A1;
+$scrollbarHoverColor: #888888;
+$scrollbarBackground: #E1E1E1;
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# Import stylesheet
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+@import "import/styles";
+
+#theme-toogle-bright {
+	display: none;
+}

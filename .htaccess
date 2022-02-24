@@ -1,0 +1,37 @@
+#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%#
+# Apache configuration                       [Thomas Lange <code@nerdmind.de>] #
+#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%#
+#                                                                              #
+# This file contains the configuration rules for the Apache HTTP server. It is #
+# recommended to include these rules directly into the Apache configuration!   #
+#                                                                              #
+# Additionally, it's recommended to ensure that the AllowOverride directive is #
+# disabled if these rules are included in the Apache configuration. Otherwise, #
+# the Apache HTTP server is checking for .htaccess files on every request.     #
+#                                                                              #
+# AllowOverride None                                                           #
+#                                                                              #
+#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%#
+
+#===============================================================================
+# Error pages
+#===============================================================================
+ErrorDocument 403 /403.php
+ErrorDocument 404 /404.php
+
+#===============================================================================
+# Enable RewriteEngine
+#===============================================================================
+RewriteEngine On
+
+#===============================================================================
+# Forbidden directories
+#===============================================================================
+RewriteRule ^(.git|core|theme/([^/]+)/(html|lang))/ - [F]
+
+#===============================================================================
+# Pass requests to index.php
+#===============================================================================
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . index.php [L]
